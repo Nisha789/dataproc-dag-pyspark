@@ -24,5 +24,5 @@ def process_data():
 
     spark.stop()
 
-if __name__ == "main":
+if __name__ == "__main__":
     process_data()
