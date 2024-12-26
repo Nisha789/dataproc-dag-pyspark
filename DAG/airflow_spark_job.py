@@ -88,7 +88,7 @@ delete_cluster = DataprocDeleteClusterOperator(
     cluster_name = CLUSTER_NAME,
     project_id = PROJECT_ID,
     region = REGION,
-    trigger_rule = "all done", # ensures cluster deletion if spark job fails 
+    trigger_rule = "all_done", # ensures cluster deletion if spark job fails 
     dag = dag,
 )
 
