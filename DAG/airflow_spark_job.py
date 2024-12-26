@@ -83,7 +83,7 @@ submit_pyspark_job = DataprocSubmitPySparkJobOperator(
     dag = dag
 )
 
-delete_cluster = dataprocDeleteClusterOperator(
+delete_cluster = DataprocDeleteClusterOperator(
     task_id = 'delete_cluster',
     cluster_name = CLUSTER_NAME,
     project_id = PROJECT_ID,
